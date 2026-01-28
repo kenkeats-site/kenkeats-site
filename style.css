@@ -255,7 +255,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* MOBILE RESPONSIVENESS – tightened and polished */
+/* MOBILE */
 @media (max-width: 768px) {
   body {
     font-size: 16px;
@@ -302,12 +302,14 @@ html {
 
   .hero-headshot {
     width: 200px;
-    height: 200px;
+    height: auto;
+    aspect-ratio: 1 / 1.2;
+    max-height: 260px;
   }
 
   .hero-overlay {
     gap: 18px;
-    padding: 0 10px;
+    padding-top: 20px;
   }
 
   .hero-overlay h2 {
@@ -370,7 +372,7 @@ html {
   }
 }
 
-/* Very small screens (extra narrow phones) */
+/* Very small screens */
 @media (max-width: 480px) {
   .container {
     padding: 0 12px;
@@ -388,7 +390,9 @@ html {
 
   .hero-headshot {
     width: 180px;
-    height: 180px;
+    height: auto;
+    aspect-ratio: 1 / 1.2;
+    max-height: 220px;
   }
 
   .hero-overlay h2 {
