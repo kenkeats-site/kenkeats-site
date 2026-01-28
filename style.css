@@ -255,7 +255,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* MOBILE RESPONSIVENESS */
+/* MOBILE – with headshot contain fix */
 @media (max-width: 768px) {
   body {
     font-size: 16px;
@@ -301,10 +301,12 @@ html {
   }
 
   .hero-headshot {
-    width: 200px;
+    width: 220px;
     height: auto;
-    aspect-ratio: 1 / 1.2;
-    max-height: 260px;
+    max-height: 280px;
+    object-fit: contain; /* FULL IMAGE NO CROP – this is the key change */
+    object-position: top center;
+    background: transparent; /* no bars if possible */
   }
 
   .hero-overlay {
@@ -391,8 +393,8 @@ html {
   .hero-headshot {
     width: 180px;
     height: auto;
-    aspect-ratio: 1 / 1.2;
     max-height: 220px;
+    object-fit: contain;
   }
 
   .hero-overlay h2 {
