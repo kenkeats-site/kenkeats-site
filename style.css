@@ -255,7 +255,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* MOBILE – aggressive fixes for formatting issues */
+/* MOBILE RESPONSIVENESS – tightened and polished */
 @media (max-width: 768px) {
   body {
     font-size: 16px;
@@ -294,7 +294,7 @@ html {
   }
 
   #hero {
-    margin-top: 118px; /* matches reduced header */
+    margin-top: 118px;
     height: 45vh;
     min-height: 260px;
     max-height: 420px;
@@ -307,6 +307,7 @@ html {
 
   .hero-overlay {
     gap: 18px;
+    padding: 0 10px;
   }
 
   .hero-overlay h2 {
@@ -316,7 +317,7 @@ html {
 
   .hero-overlay p {
     font-size: 1.05rem;
-    padding: 0 15px;
+    max-width: 90%;
   }
 
   h2 {
@@ -347,6 +348,8 @@ html {
   #bio p {
     font-size: 1.18rem;
     line-height: 1.75;
+    max-width: 100%;
+    padding: 0 5px;
   }
 
   .bio-images {
@@ -367,7 +370,7 @@ html {
   }
 }
 
-/* Very small screens */
+/* Very small screens (extra narrow phones) */
 @media (max-width: 480px) {
   .container {
     padding: 0 12px;
