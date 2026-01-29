@@ -20,26 +20,34 @@ body {
   padding-top: 40px;
 }
 
-/* Header */
+/* Header – taller with headshot next to name */
 .top-bar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100px;
+  height: 130px; /* bigger but not too big */
   background: #0a0a0a;
   z-index: 1000;
   border-bottom: 1px solid #1a1a1a;
 }
 
-.nav-bar {
-  position: fixed;
-  top: 100px;
-  left: 0;
-  width: 100%;
-  height: 60px;
-  background: #1a0000;
-  z-index: 999;
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  gap: 30px; /* space between headshot and name */
+}
+
+.header-headshot {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 50%;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.6);
 }
 
 .site-title {
@@ -49,8 +57,17 @@ body {
   color: #ffffff;
   letter-spacing: 8px;
   text-transform: uppercase;
-  text-align: center;
-  line-height: 100px;
+}
+
+/* Nav bar – adjusted for taller top bar */
+.nav-bar {
+  position: fixed;
+  top: 130px;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: #1a0000;
+  z-index: 999;
 }
 
 .nav-bar .container {
@@ -76,13 +93,13 @@ body {
   color: #f0e0e0;
 }
 
-/* Hero */
+/* Hero – new text, no headshot clash */
 #hero {
   position: relative;
   height: 70vh;
   min-height: 450px;
   max-height: 700px;
-  margin-top: 160px;
+  margin-top: 190px; /* taller top bar + nav = 190px */
   overflow: hidden;
 }
 
@@ -91,7 +108,7 @@ body {
   height: 100%;
   object-fit: cover;
   object-position: center;
-  filter: brightness(0.45);
+  filter: brightness(0.5);
 }
 
 .hero-overlay {
@@ -102,35 +119,19 @@ body {
   text-align: center;
   color: #ffffff;
   text-shadow: 0 4px 20px rgba(0,0,0,0.8);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 35px;
-}
-
-.hero-headshot {
-  width: 380px;
-  height: 380px;
-  object-fit: cover;
-  object-position: top center;
-  border-radius: 16px;
-  border: 5px solid rgba(255, 255, 255, 0.35);
-  box-shadow: 0 12px 50px rgba(0,0,0,0.8);
-  transition: transform 0.3s ease;
-}
-
-.hero-headshot:hover {
-  transform: scale(1.04);
 }
 
 .hero-overlay h2 {
-  font-size: 3.8rem;
-  margin: 0;
+  font-size: 4.2rem;
+  margin: 0 0 15px;
+  letter-spacing: 2px;
 }
 
 .hero-overlay p {
-  font-size: 1.6rem;
-  margin: 10px 0 0;
+  font-size: 2.2rem;
+  margin: 0;
+  font-weight: 500;
+  letter-spacing: 1px;
 }
 
 /* Tabs & players */
@@ -255,7 +256,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* MOBILE – headshot shrunk + no crop */
+/* MOBILE */
 @media (max-width: 768px) {
   body {
     font-size: 16px;
@@ -266,148 +267,60 @@ html {
   }
 
   .top-bar {
+    height: 100px;
+  }
+
+  .header-container {
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .header-headshot {
+    width: 70px;
     height: 70px;
   }
 
   .site-title {
-    font-size: 2.3rem;
-    letter-spacing: 3px;
-    line-height: 70px;
+    font-size: 2.8rem;
+    letter-spacing: 4px;
   }
 
   .nav-bar {
-    top: 70px;
-    height: 48px;
+    top: 100px;
+    height: 50px;
   }
 
   .nav-bar .container {
-    gap: 20px;
-    padding: 0 10px;
-    flex-wrap: wrap;
-    justify-content: center;
+    gap: 30px;
   }
 
   .nav-link {
-    font-size: 0.95rem;
-    padding: 6px 10px;
-    white-space: nowrap;
+    font-size: 1rem;
   }
 
   #hero {
-    margin-top: 118px;
-    height: 42vh; /* less dominant */
-    min-height: 240px;
-    max-height: 380px;
-  }
-
-  .hero-headshot {
-    width: 160px; /* much smaller – less dominant */
-    height: auto;
-    max-height: 220px;
-    object-fit: contain; /* no crop, full image visible */
-    object-position: top center;
-    background: transparent;
-  }
-
-  .hero-overlay {
-    gap: 15px;
-    padding-top: 15px;
+    margin-top: 150px;
+    height: 50vh;
+    min-height: 300px;
   }
 
   .hero-overlay h2 {
-    font-size: 2.2rem;
-    line-height: 1.15;
+    font-size: 2.8rem;
   }
 
   .hero-overlay p {
-    font-size: 1rem;
-    max-width: 90%;
+    font-size: 1.8rem;
   }
 
   h2 {
-    font-size: 2.5rem;
-    margin-bottom: 25px;
-  }
-
-  .tab-section {
-    padding: 35px 10px;
-  }
-
-  .player {
-    margin: 25px 0;
-  }
-
-  .player iframe {
-    height: 160px;
-  }
-
-  #bio {
-    padding: 45px 10px;
-  }
-
-  #bio h2 {
     font-size: 2.8rem;
   }
 
   #bio p {
-    font-size: 1.18rem;
-    line-height: 1.75;
-    max-width: 100%;
-    padding: 0 5px;
-  }
-
-  .bio-images {
-    gap: 20px;
-  }
-
-  .bio-portrait {
-    max-width: 200px;
-  }
-
-  #contact {
-    padding: 45px 10px;
-  }
-
-  footer {
-    padding: 45px 10px;
-    font-size: 0.9rem;
-  }
-}
-
-/* Very small screens */
-@media (max-width: 480px) {
-  .container {
-    padding: 0 12px;
-  }
-
-  .nav-link {
-    font-size: 0.9rem;
-  }
-
-  #hero {
-    margin-top: 110px;
-    height: 38vh;
-    min-height: 220px;
-  }
-
-  .hero-headshot {
-    width: 140px;
-    max-height: 200px;
-  }
-
-  .hero-overlay h2 {
-    font-size: 2rem;
-  }
-
-  .hero-overlay p {
-    font-size: 0.95rem;
-  }
-
-  #bio p {
-    font-size: 1.1rem;
+    font-size: 1.25rem;
   }
 
   .player iframe {
-    height: 140px;
+    height: 180px;
   }
 }
