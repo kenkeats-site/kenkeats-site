@@ -93,16 +93,16 @@ body {
   color: #f0e0e0;
 }
 
-/* Hero – full screen bridge with focus on figure/path */
+/* Hero – full screen bridge with figure/path focus */
 #hero {
   position: relative;
-  height: 60vh; /* taller to show more composition */
+  height: 60vh;
   min-height: 420px;
   max-height: 750px;
   margin-top: 260px;
-  background: url('hero-bridge.jpg') no-repeat center 75%; /* 75% focuses on lower part – figure walking into distance */
-  background-size: cover; /* fills whole screen, no bars/square */
-  background-color: #000000; /* fallback dark */
+  background: url('hero-bridge.jpg') no-repeat center 75%; /* focuses on lower part for figure walking into distance */
+  background-size: cover; /* full screen fill */
+  background-color: #000000;
   overflow: hidden;
 }
 
@@ -255,7 +255,7 @@ html {
 /* MOBILE – less squashed */
 @media (max-width: 768px) {
   body {
-    font-size: 17px; /* slightly larger base */
+    font-size: 17px;
   }
 
   .container {
@@ -314,7 +314,6 @@ html {
   #bio p {
     font-size: 1.3rem;
     line-height: 1.9;
-    padding: 0 15px;
   }
 
   .bio-main-portrait {
