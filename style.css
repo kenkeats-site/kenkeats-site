@@ -252,10 +252,10 @@ html {
   scroll-behavior: smooth;
 }
 
-/* MOBILE – typography fixed (smaller, better formatted, less squashed) */
+/* MOBILE – typography smaller/better formatted, less squashed */
 @media (max-width: 768px) {
   body {
-    font-size: 17px;
+    font-size: 16px;
   }
 
   .container {
@@ -272,8 +272,8 @@ html {
   }
 
   .site-title {
-    font-size: 3rem;
-    letter-spacing: 6px;
+    font-size: 2.8rem;
+    letter-spacing: 5px;
   }
 
   .header-container {
@@ -290,21 +290,21 @@ html {
   }
 
   .nav-link {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 
   #hero {
     margin-top: 190px;
     height: 48vh;
-    min-height: 300px;
+    min-height: 280px;
   }
 
   .hero-overlay h2 {
-    font-size: 2.6rem;
+    font-size: 2.4rem;
   }
 
   .hero-overlay p {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
   .hero-overlay {
@@ -312,12 +312,12 @@ html {
   }
 
   h2 {
-    font-size: 2.8rem;
+    font-size: 2.6rem;
   }
 
   #bio p {
-    font-size: 1.3rem;
-    line-height: 1.9;
+    font-size: 1.25rem;
+    line-height: 1.85;
   }
 
   .bio-main-portrait {
@@ -344,22 +344,22 @@ html {
 /* Very small screens */
 @media (max-width: 480px) {
   .site-title {
-    font-size: 2.8rem;
-  }
-
-  .hero-overlay h2 {
-    font-size: 2.4rem;
-  }
-
-  .hero-overlay p {
-    font-size: 1.6rem;
-  }
-
-  h2 {
     font-size: 2.6rem;
   }
 
+  .hero-overlay h2 {
+    font-size: 2.2rem;
+  }
+
+  .hero-overlay p {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 2.4rem;
+  }
+
   #bio p {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
   }
 }
