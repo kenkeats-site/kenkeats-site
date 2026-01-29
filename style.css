@@ -93,17 +93,23 @@ body {
   color: #f0e0e0;
 }
 
-/* Hero – adjusted to show your head/full upper body + path/distance */
+/* Hero – <img> with contain to show full bridge composition (figure head to feet, path, river, bridge, city, sky) */
 #hero {
   position: relative;
   height: 70vh;
   min-height: 450px;
   max-height: 800px;
   margin-top: 260px;
-  background: url('hero-bridge.jpg') no-repeat center 30%; /* 30% pulls up to show your head/upper body while keeping path/distance */
-  background-size: cover; /* fills screen */
-  background-color: #000000;
   overflow: hidden;
+  background: #000000; /* dark fallback for any bars */
+}
+
+.hero-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* full image visible, no crop – shows everything */
+  object-position: center; /* balanced */
+  filter: brightness(0.5);
 }
 
 .hero-overlay {
@@ -297,6 +303,10 @@ html {
     margin-top: 215px;
     height: 55vh;
     min-height: 320px;
+  }
+
+  .hero-bg {
+    object-fit: contain; /* full image on mobile too */
   }
 
   .hero-overlay h2 {
