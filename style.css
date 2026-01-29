@@ -93,15 +93,15 @@ body {
   color: #f0e0e0;
 }
 
-/* Hero – full screen bridge with figure/path focus */
+/* Hero – full screen bridge with more composition visible (figure/path/distance) */
 #hero {
   position: relative;
-  height: 60vh;
-  min-height: 420px;
-  max-height: 750px;
+  height: 65vh; /* taller to show more image */
+  min-height: 450px;
+  max-height: 800px;
   margin-top: 260px;
-  background: url('hero-bridge.jpg') no-repeat center 75%; /* focuses on lower part for figure walking into distance */
-  background-size: cover; /* full screen fill */
+  background: url('hero-bridge.jpg') no-repeat center 85%; /* 85% focuses on lower part – full path/figure/distance */
+  background-size: cover; /* fills screen */
   background-color: #000000;
   overflow: hidden;
 }
@@ -255,7 +255,7 @@ html {
 /* MOBILE – less squashed */
 @media (max-width: 768px) {
   body {
-    font-size: 17px;
+    font-size: 18px; /* larger base */
   }
 
   .container {
@@ -296,7 +296,7 @@ html {
   #hero {
     margin-top: 215px;
     height: 48vh;
-    min-height: 300px;
+    min-height: 320px;
   }
 
   .hero-overlay h2 {
@@ -312,8 +312,8 @@ html {
   }
 
   #bio p {
-    font-size: 1.3rem;
-    line-height: 1.9;
+    font-size: 1.35rem;
+    line-height: 2;
   }
 
   .bio-main-portrait {
@@ -321,18 +321,18 @@ html {
   }
 
   .player iframe {
-    height: 200px;
+    height: 220px;
   }
 
   .tab-section {
-    padding: 50px 15px;
+    padding: 60px 15px;
   }
 
   #contact {
-    padding: 60px 15px;
+    padding: 70px 15px;
   }
 
   footer {
-    padding: 60px 15px;
+    padding: 70px 15px;
   }
 }
