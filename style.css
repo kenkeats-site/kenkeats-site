@@ -45,7 +45,7 @@ body {
   height: 140px;
   object-fit: cover;
   object-position: top center;
-  border-radius: 12px; /* soft square edges */
+  border-radius: 12px;
   border: 5px solid rgba(255, 255, 255, 0.35);
   box-shadow: 0 10px 35px rgba(0,0,0,0.7);
 }
@@ -93,21 +93,21 @@ body {
   color: #f0e0e0;
 }
 
-/* Hero – smaller, contain fit to show full bridge image */
+/* Hero – contain fit to show more/full bridge */
 #hero {
   position: relative;
-  height: 45vh;
-  min-height: 320px;
-  max-height: 500px;
+  height: 55vh; /* slightly taller to show more image */
+  min-height: 380px;
+  max-height: 600px;
   margin-top: 260px;
   overflow: hidden;
-  background: #000000; /* dark fill for any bars from contain fit */
+  background: #000000; /* dark fill for any bars from contain */
 }
 
 .hero-bg {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* shows full image, no crop – more bridge visible */
+  object-fit: contain; /* shows full image – more of the bridge visible, no crop */
   object-position: center;
   filter: brightness(0.5);
 }
@@ -302,12 +302,12 @@ html {
 
   #hero {
     margin-top: 190px;
-    height: 38vh;
-    min-height: 240px;
+    height: 42vh; /* slightly taller on mobile to show more image */
+    min-height: 280px;
   }
 
   .hero-bg {
-    object-fit: contain; /* full image on mobile too */
+    object-fit: contain; /* full bridge visible on mobile too */
   }
 
   .hero-overlay h2 {
