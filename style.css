@@ -252,7 +252,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* MOBILE – less squashed, hero text smaller */
+/* MOBILE – hero text smaller/better formatted, less squashed */
 @media (max-width: 768px) {
   body {
     font-size: 18px;
@@ -305,6 +305,10 @@ html {
 
   .hero-overlay p {
     font-size: 1.8rem; /* smaller */
+  }
+
+  .hero-overlay {
+    gap: 15px;
   }
 
   h2 {
