@@ -20,13 +20,13 @@ body {
   padding-top: 40px;
 }
 
-/* Top bar – taller with small embedded headshot next to name */
+/* Top bar – bigger banner */
 .top-bar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 130px;
+  height: 160px; /* bigger banner */
   background: #0a0a0a;
   z-index: 1000;
   border-bottom: 1px solid #1a1a1a;
@@ -35,34 +35,34 @@ body {
 .header-container {
   display: flex;
   align-items: center;
-  justify-content: center; /* centers the headshot + name group */
+  justify-content: center;
   height: 100%;
-  gap: 25px; /* balanced space between headshot and name */
+  gap: 35px; /* balanced space */
 }
 
 .header-headshot {
-  width: 80px;
-  height: 80px;
+  width: 110px; /* slightly larger for square-ish feel */
+  height: 110px;
   object-fit: cover;
   object-position: top center;
-  border-radius: 50%;
-  border: 3px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+  border-radius: 12px; /* soft square – not full circle */
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 6px 25px rgba(0,0,0,0.7);
 }
 
 .site-title {
   margin: 0;
-  font-size: 3.8rem;
+  font-size: 4.2rem; /* slightly larger to match bigger banner */
   font-weight: 900;
   color: #ffffff;
-  letter-spacing: 8px;
+  letter-spacing: 9px;
   text-transform: uppercase;
 }
 
-/* Nav bar */
+/* Nav bar – adjusted for bigger top bar */
 .nav-bar {
   position: fixed;
-  top: 130px;
+  top: 160px;
   left: 0;
   width: 100%;
   height: 60px;
@@ -93,13 +93,13 @@ body {
   color: #f0e0e0;
 }
 
-/* Hero – album announcement */
+/* Hero – smaller underground picture */
 #hero {
   position: relative;
-  height: 70vh;
-  min-height: 450px;
-  max-height: 700px;
-  margin-top: 190px; /* top bar 130px + nav 60px */
+  height: 55vh; /* smaller */
+  min-height: 380px;
+  max-height: 600px;
+  margin-top: 220px; /* top bar 160px + nav 60px */
   overflow: hidden;
 }
 
@@ -118,17 +118,17 @@ body {
   transform: translate(-50%, -50%);
   text-align: center;
   color: #ffffff;
-  text-shadow: 0 4px 20px rgba(0,0,0,0.8);
+  text-shadow: 0 4px 20px rgba(0,0,0 anarch,0.8);
 }
 
 .hero-overlay h2 {
-  font-size: 4.2rem;
+  font-size: 4rem;
   margin: 0 0 15px;
   letter-spacing: 2px;
 }
 
 .hero-overlay p {
-  font-size: 2.2rem;
+  font-size: 2rem;
   margin: 0;
   font-weight: 500;
   letter-spacing: 1px;
@@ -267,25 +267,25 @@ html {
   }
 
   .top-bar {
-    height: 100px;
+    height: 120px; /* bigger on mobile too */
   }
 
   .header-headshot {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
   }
 
   .site-title {
-    font-size: 2.8rem;
+    font-size: 3rem;
     letter-spacing: 5px;
   }
 
   .header-container {
-    gap: 20px;
+    gap: 25px;
   }
 
   .nav-bar {
-    top: 100px;
+    top: 120px;
     height: 50px;
   }
 
@@ -298,13 +298,13 @@ html {
   }
 
   #hero {
-    margin-top: 150px;
-    height: 50vh;
-    min-height: 300px;
+    margin-top: 170px;
+    height: 45vh;
+    min-height: 280px;
   }
 
   .hero-overlay h2 {
-    font-size: 3rem;
+    font-size: 2.8rem;
   }
 
   .hero-overlay p {
