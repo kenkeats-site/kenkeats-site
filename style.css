@@ -93,15 +93,15 @@ body {
   color: #f0e0e0;
 }
 
-/* Hero – full screen bridge with more composition visible (figure/path/distance) */
+/* Hero – zoomed out to show more of bridge composition (figure/path/distance) */
 #hero {
   position: relative;
-  height: 65vh; /* taller to show more image */
+  height: 70vh; /* taller to show more */
   min-height: 450px;
   max-height: 800px;
   margin-top: 260px;
-  background: url('hero-bridge.jpg') no-repeat center 85%; /* 85% focuses on lower part – full path/figure/distance */
-  background-size: cover; /* fills screen */
+  background: url('hero-bridge.jpg') no-repeat center bottom;
+  background-size: 140%; /* zoomed out – shows much more of the image */
   background-color: #000000;
   overflow: hidden;
 }
@@ -255,7 +255,7 @@ html {
 /* MOBILE – less squashed */
 @media (max-width: 768px) {
   body {
-    font-size: 18px; /* larger base */
+    font-size: 18px;
   }
 
   .container {
@@ -295,7 +295,7 @@ html {
 
   #hero {
     margin-top: 215px;
-    height: 48vh;
+    height: 55vh;
     min-height: 320px;
   }
 
