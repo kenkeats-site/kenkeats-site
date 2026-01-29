@@ -252,107 +252,63 @@ html {
   scroll-behavior: smooth;
 }
 
-/* MOBILE – typography smaller/better formatted, less squashed */
+/* MOBILE – typography much smaller/better formatted, less squashed */
 @media (max-width: 768px) {
   body {
-    font-size: 16px;
+    font-size: 15px; /* smaller base for better fit */
   }
 
   .container {
-    padding: 0 20px;
+    padding: 0 15px;
   }
 
   .top-bar {
-    height: 140px;
+    height: 130px;
   }
 
   .header-headshot {
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
   }
 
   .site-title {
-    font-size: 2.8rem;
-    letter-spacing: 5px;
+    font-size: 2.6rem; /* smaller "KEN KEATS" */
+    letter-spacing: 4px;
   }
 
   .header-container {
-    gap: 30px;
+    gap: 25px;
   }
 
   .nav-bar {
-    top: 140px;
-    height: 50px;
+    top: 130px;
+    height: 48px;
   }
 
   .nav-bar .container {
-    gap: 30px;
+    gap: 25px;
   }
 
   .nav-link {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
   }
 
   #hero {
-    margin-top: 190px;
-    height: 48vh;
-    min-height: 280px;
+    margin-top: 178px;
+    height: 45vh;
+    min-height: 260px;
   }
 
   .hero-overlay h2 {
-    font-size: 2.4rem;
+    font-size: 2.2rem; /* smaller */
   }
 
   .hero-overlay p {
-    font-size: 1.6rem;
+    font-size: 1.5rem; /* smaller */
   }
 
   .hero-overlay {
-    gap: 12px;
-  }
-
-  h2 {
-    font-size: 2.6rem;
-  }
-
-  #bio p {
-    font-size: 1.25rem;
-    line-height: 1.85;
-  }
-
-  .bio-main-portrait {
-    max-width: 380px;
-  }
-
-  .player iframe {
-    height: 200px;
-  }
-
-  .tab-section {
-    padding: 50px 15px;
-  }
-
-  #contact {
-    padding: 60px 15px;
-  }
-
-  footer {
-    padding: 60px 15px;
-  }
-}
-
-/* Very small screens */
-@media (max-width: 480px) {
-  .site-title {
-    font-size: 2.6rem;
-  }
-
-  .hero-overlay h2 {
-    font-size: 2.2rem;
-  }
-
-  .hero-overlay p {
-    font-size: 1.5rem;
+    gap: 10px;
   }
 
   h2 {
@@ -361,5 +317,49 @@ html {
 
   #bio p {
     font-size: 1.2rem;
+    line-height: 1.8;
+  }
+
+  .bio-main-portrait {
+    max-width: 350px;
+  }
+
+  .player iframe {
+    height: 180px;
+  }
+
+  .tab-section {
+    padding: 45px 10px;
+  }
+
+  #contact {
+    padding: 55px 10px;
+  }
+
+  footer {
+    padding: 55px 10px;
+  }
+}
+
+/* Very small screens */
+@media (max-width: 480px) {
+  .site-title {
+    font-size: 2.4rem;
+  }
+
+  .hero-overlay h2 {
+    font-size: 2rem;
+  }
+
+  .hero-overlay p {
+    font-size: 1.4rem;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  #bio p {
+    font-size: 1.15rem;
   }
 }
