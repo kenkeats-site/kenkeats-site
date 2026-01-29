@@ -93,15 +93,15 @@ body {
   color: #f0e0e0;
 }
 
-/* Hero – full composition visible with contain (no zoom/crop) */
+/* Hero – zoomed out to show full bridge composition (figure/path/distance/river/city/sky) */
 #hero {
   position: relative;
   height: 70vh;
   min-height: 450px;
   max-height: 800px;
   margin-top: 260px;
-  background: url('hero-bridge.jpg') no-repeat center center;
-  background-size: contain; /* full image visible, no crop/zoom – shows everything */
+  background: url('hero-bridge.jpg') no-repeat center 40%; /* 40% pulls up to show full figure/head + path/distance */
+  background-size: 160%; /* zoomed out – shows much more of the full image */
   background-color: #000000;
   overflow: hidden;
 }
@@ -123,14 +123,10 @@ body {
 }
 
 .hero-overlay p {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   margin: 0;
   font-weight: 500;
   letter-spacing: 1px;
-  color: #b22222;
-  font-style: italic;
-  text-shadow: 0 0 8px #b22222, 0 0 16px #b22222, 0 0 24px #8b0000, 0 0 32px #8b0000, 0 0 40px #8b0000; /* mysterious cigarette glow in smoke */
-  opacity: 0.95;
 }
 
 /* Tabs & players */
@@ -184,7 +180,7 @@ iframe {
 .bio-main-portrait {
   max-width: 500px;
   width: 100%;
- IBILITY border-radius: 12px;
+  border-radius: 12px;
   box-shadow: 0 12px 40px rgba(0,0,0,0.7);
 }
 
