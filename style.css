@@ -93,15 +93,15 @@ body {
   color: #f0e0e0;
 }
 
-/* Hero – zoomed out more to show full bridge composition */
+/* Hero – full composition visible with contain (no zoom/crop) */
 #hero {
   position: relative;
   height: 70vh;
   min-height: 450px;
   max-height: 800px;
   margin-top: 260px;
-  background: url('hero-bridge.jpg') no-repeat center 85%; /* 85% pulls up to show more upper body/figure while keeping path/distance */
-  background-size: 150%; /* zoomed out further – shows much more of the full image */
+  background: url('hero-bridge.jpg') no-repeat center center;
+  background-size: contain; /* full image visible, no crop/zoom – shows everything */
   background-color: #000000;
   overflow: hidden;
 }
@@ -123,12 +123,14 @@ body {
 }
 
 .hero-overlay p {
-  font-size: 2.5rem; /* slightly bigger */
+  font-size: 2.5rem;
   margin: 0;
   font-weight: 500;
   letter-spacing: 1px;
-  color: #b22222; /* red accent */
-  text-shadow: 0 0 10px #b22222, 0 0 20px #b22222, 0 0 30px #b22222, 0 0 40px #8b0000; /* glowing cigarette end in smoke effect */
+  color: #b22222;
+  font-style: italic;
+  text-shadow: 0 0 8px #b22222, 0 0 16px #b22222, 0 0 24px #8b0000, 0 0 32px #8b0000, 0 0 40px #8b0000; /* mysterious cigarette glow in smoke */
+  opacity: 0.95;
 }
 
 /* Tabs & players */
@@ -182,7 +184,7 @@ iframe {
 .bio-main-portrait {
   max-width: 500px;
   width: 100%;
-  border-radius: 12px;
+ IBILITY border-radius: 12px;
   box-shadow: 0 12px 40px rgba(0,0,0,0.7);
 }
 
