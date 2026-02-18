@@ -116,7 +116,8 @@ body {
 /* Tabs & players */
 .tab-section {
   display: none;
-  padding: 60px 20px;
+  padding: 80px 20px 60px;          /* Increased top padding for visual space */
+  scroll-margin-top: 280px;         /* Key fix: leaves ~header + nav height when scrolling to section */
 }
 .tab-section.active {
   display: block;
@@ -330,7 +331,8 @@ html {
     height: 200px;
   }
   .tab-section {
-    padding: 50px 15px;
+    padding: 80px 15px 50px;
+    scroll-margin-top: 220px;      /* Adjusted for shorter mobile header/nav (~190px + buffer) */
   }
   #contact {
     padding: 60px 15px;
