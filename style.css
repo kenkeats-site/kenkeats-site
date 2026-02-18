@@ -170,14 +170,14 @@ iframe {
 /* Layout: left numbers + right poems */
 .poems-layout {
   display: flex;
-  gap: 10px; /* tight gap – numbers very close to red line */
+  gap: 8px; /* minimal gap – numbers very close to red line */
   max-width: 1400px;
   margin: 0 auto;
 }
 
-/* Left sidebar – ultra-discrete numbers */
+/* Left sidebar – discrete numbers only */
 .sonnet-sidebar {
-  flex: 0 0 40px; /* extremely narrow */
+  flex: 0 0 36px; /* ultra-narrow – just for numbers */
   position: sticky;
   top: 260px;
   align-self: start;
@@ -189,7 +189,7 @@ iframe {
   box-shadow: none;
 }
 
-/* Numbers – minimal */
+/* Numbers – minimal and close */
 .sonnet-sidebar ul {
   list-style: none;
   padding: 0;
@@ -197,7 +197,7 @@ iframe {
 }
 
 .sonnet-sidebar li {
-  margin: 24px 0; /* spacing to align with poem blocks */
+  margin: 24px 0; /* vertical spacing to match poem height */
 }
 
 .sonnet-sidebar a {
@@ -226,7 +226,7 @@ iframe {
 /* Poem styling – red line hugs left */
 .poem {
   margin-bottom: 70px;
-  padding: 0 20px 0 0; /* no left padding */
+  padding: 0 20px 0 0; /* no left padding – red line close to numbers */
   scroll-margin-top: 240px;
 }
 
