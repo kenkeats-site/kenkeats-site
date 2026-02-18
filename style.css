@@ -170,19 +170,20 @@ iframe {
 /* Layout: left numbers + right poems */
 .poems-layout {
   display: flex;
-  gap: 8px; /* minimal gap – numbers right next to red line */
+  gap: 4px; /* extremely tight — numbers hard against red line */
   max-width: 1400px;
   margin: 0 auto;
 }
 
-/* Left sidebar – discrete numbers only */
+/* Left sidebar – ultra-discrete numbers only */
 .sonnet-sidebar {
-  flex: 0 0 36px; /* ultra-narrow */
+  flex: 0 0 32px; /* very narrow – just enough for 2-digit numbers */
   position: sticky;
   top: 260px;
   align-self: start;
   text-align: right;
   padding: 0;
+  margin-right: 0;
   background: transparent;
   border: none;
   box-shadow: none;
@@ -196,7 +197,7 @@ iframe {
 }
 
 .sonnet-sidebar li {
-  margin: 22px 0; /* vertical spacing to match poem height */
+  margin: 26px 0; /* vertical spacing to align with poem blocks */
 }
 
 .sonnet-sidebar a {
@@ -222,10 +223,10 @@ iframe {
   margin: 0 auto;
 }
 
-/* Poem styling – red line very close to numbers */
+/* Poem styling – red line hard against numbers */
 .poem {
   margin-bottom: 70px;
-  padding: 0 20px 0 0; /* no left padding */
+  padding: 0 20px 0 0; /* no left padding – red line meets numbers */
   scroll-margin-top: 240px;
 }
 
