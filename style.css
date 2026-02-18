@@ -175,9 +175,9 @@ iframe {
   margin: 0 auto;
 }
 
-/* Left sidebar – ultra-discrete numbers */
+/* Left sidebar – discrete numbers only */
 .sonnet-sidebar {
-  flex: 0 0 28px; /* ultra-narrow */
+  flex: 0 0 28px; /* ultra-narrow – numbers sit right next to red line */
   position: sticky;
   top: 260px;
   align-self: start;
@@ -187,8 +187,8 @@ iframe {
   background: transparent;
   border: none;
   box-shadow: none;
-  max-height: none;
-  overflow: visible;
+  max-height: none !important;
+  overflow: visible !important;
 }
 
 /* Numbers – clean, full list */
@@ -199,7 +199,7 @@ iframe {
 }
 
 .sonnet-sidebar li {
-  margin: 26px 0; /* vertical spacing to align with poem blocks */
+  margin: 28px 0; /* vertical spacing to align with poem blocks */
 }
 
 .sonnet-sidebar a {
@@ -208,6 +208,8 @@ iframe {
   font-size: 1.05rem;
   text-decoration: none;
   transition: color 0.2s;
+  padding: 0;
+  margin: 0;
 }
 
 .sonnet-sidebar a:hover {
@@ -228,7 +230,7 @@ iframe {
 /* Poem styling – red line hard against numbers */
 .poem {
   margin-bottom: 70px;
-  padding: 0 20px 0 0; /* no left padding */
+  padding: 0 20px 0 0; /* no left padding – red line meets numbers */
   scroll-margin-top: 240px;
 }
 
