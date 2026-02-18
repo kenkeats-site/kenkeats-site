@@ -170,7 +170,7 @@ iframe {
 /* Layout: left numbers + right poems */
 .poems-layout {
   display: flex;
-  gap: 8px; /* very tight – numbers right next to red line */
+  gap: 8px; /* minimal gap – numbers right next to red line */
   max-width: 1400px;
   margin: 0 auto;
 }
@@ -188,7 +188,7 @@ iframe {
   box-shadow: none;
 }
 
-/* Numbers – clean, full list */
+/* Numbers – clean, full list, no scrollbar */
 .sonnet-sidebar ul {
   list-style: none;
   padding: 0;
@@ -196,7 +196,7 @@ iframe {
 }
 
 .sonnet-sidebar li {
-  margin: 22px 0; /* vertical spacing to roughly match poem height */
+  margin: 22px 0; /* vertical spacing to match poem height */
 }
 
 .sonnet-sidebar a {
@@ -211,7 +211,7 @@ iframe {
   color: #fff;
 }
 
-/* Main poems */
+/* Main poems – right side */
 .poems-main {
   flex: 1;
   min-width: 0;
